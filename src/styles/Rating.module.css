@@ -1,0 +1,24 @@
+body {
+  background-color: #fcfcfc;
+}
+h1 {
+  margin: 1rem;
+}
+h2 {
+  margin: 0.2rem 0rem;
+}
+.container {
+  border: solid 1px black;
+  padding: 1rem;
+  margin: 1rem;
+}
+.rated {
+  color: orange;
+}
+.star {
+  color: gray;
+}
+
+.textPink {
+  color: pink;
+}
