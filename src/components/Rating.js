@@ -11,7 +11,7 @@ export default function Rating(){
     </h1>
     {movies?.map(movie => {
       return(
-      <div className={styles.container}>
+      <div className={styles.container} key={movie.title}>
         <h2>{movie?.title}({movie?.year})</h2>
         <Stars/>
       </div>)
@@ -28,7 +28,7 @@ function Stars(){
     <>
       {stars.map((star, index) => {
         let style = star <= rate ? styles.rated : styles.star
-       return(<span className={style} onClick={()=>setRate(index+1)}>
+       return(<span key={index} className={style} onClick={()=>setRate(index+1)}>
           ★
         </span>)
       })}
