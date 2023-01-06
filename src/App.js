@@ -1,12 +1,15 @@
 import './App.css';
-import Rating from './components/Rating'
-import Catstagram from './components/Catstagram';
+import {Link} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Rating />
-      <Catstagram />
+      <li>
+        <Link to="/rating">Rating</Link>
+      </li>
+      <li>
+        <Link to="/catstagram">Catstagram</Link>
+      </li>
     </div>
   );
 }

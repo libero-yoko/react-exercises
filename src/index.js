@@ -2,12 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import ErrorPage from './error-page'
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Catstagram from './components/Catstagram';
+import Rating from './components/Rating';
+
+const router=createBrowserRouter([
+  {
+    path:"/",
+    element:<App />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path:'/catstagram',
+    element:<Catstagram />,
+     errorElement: <ErrorPage />
+  },
+  {
+    path:'/rating',
+    element:<Rating />,
+     errorElement: <ErrorPage />
+  },
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
   </React.StrictMode>
 );
 
