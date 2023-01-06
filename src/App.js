@@ -1,5 +1,5 @@
-import './App.css';
-import {Link} from 'react-router-dom'
+import './App.css'
+import { Link } from 'react-router-dom'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Link to="/catstagram">Catstagram</Link>
       </li>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
