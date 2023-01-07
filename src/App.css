@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 0;
 }
 li {
   list-style: none;
@@ -8,5 +8,5 @@ li {
 nav {
   display: flex;
   column-gap: 2rem;
-  margin: 0 1rem;
+  margin: 1rem;
 }
