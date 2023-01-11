@@ -11,6 +11,9 @@ function App() {
         <li>
           <Link to="/catstagram">Catstagram</Link>
         </li>
+        <li>
+          <Link to="/wordly">Wordly</Link>
+        </li>
       </nav>
       <div id="content">
         <Outlet />

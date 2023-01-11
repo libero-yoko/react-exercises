@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Catstagram from './components/Catstagram'
 import Rating from './components/Rating'
+import Wordly from './components/Wordly'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: '/rating',
         element: <Rating />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: '/wordly',
+        element: <Wordly />,
         errorElement: <ErrorPage />
       }
     ]
